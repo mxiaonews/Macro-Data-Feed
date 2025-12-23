@@ -5,6 +5,10 @@ fred:
   base_url: https://api.stlouisfed.org/fred/series/observations
   api_key_env: "FRED_API_KEY"
   file_type: json
+
+env:
+  FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+  
 gdelt:
   enabled: true
   doc_api_base: https://api.gdeltproject.org/api/v2/doc/doc
