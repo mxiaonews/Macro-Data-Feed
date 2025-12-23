@@ -2,8 +2,7 @@ name: Macro Context Pack (Daily)
 
 on:
   schedule:
-    # 7:30 AM America/New_York ≈ 12:30 UTC during standard time, 11:30 UTC during daylight time.
-    # Choose a UTC time you accept year-round, or adjust seasonally.
+    # 07:30 New York ≈ 12:30 UTC in standard time (adjust if you care about DST precisely)
     - cron: "30 12 * * *"
   workflow_dispatch: {}
 
