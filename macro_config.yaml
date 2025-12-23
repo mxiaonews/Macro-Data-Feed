@@ -3,7 +3,7 @@ version: v1.0
 as_of_timezone: America/New_York
 fred:
   base_url: https://api.stlouisfed.org/fred/series/observations
-  api_key_env: FRED_API_KEY
+  api_key_env: "FRED_API_KEY"
   file_type: json
 gdelt:
   enabled: true
