@@ -1,0 +1,42 @@
+name: Macro Context Pack (Daily)
+
+on:
+  schedule:
+    # 7:30 AM America/New_York ≈ 12:30 UTC during standard time, 11:30 UTC during daylight time.
+    # Choose a UTC time you accept year-round, or adjust seasonally.
+    - cron: "30 12 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  build-pack:
+    runs-on: ubuntu-latest
+    env:
+      FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run macro feed
+        run: |
+          python macro_daily.py
+
+      - name: Upload outputs artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: macro-context-pack
+          path: outputs/
+          if-no-files-found: error
