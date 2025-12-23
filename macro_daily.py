@@ -5,6 +5,8 @@ import yaml
 import requests
 import datetime as dt
 from typing import Dict, Any, Tuple, Optional
+from dotenv import load_dotenv
+load_dotenv()
 
 def fred_observations(base_url: str, api_key: str, series_id: str, limit: int = 400) -> Dict[str, Any]:
     params = {
