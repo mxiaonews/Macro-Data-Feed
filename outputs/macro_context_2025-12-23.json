@@ -1,0 +1,273 @@
+{
+  "meta": {
+    "project": "Investing Project \u2014 Stage 1 Macro Context Pack",
+    "version": "v1.0",
+    "as_of_date_local": "2025-12-23",
+    "as_of_utc": "2025-12-23T02:09:56Z",
+    "timezone_label": "America/New_York",
+    "sources": {
+      "fred_base_url": "https://api.stlouisfed.org/fred/series/observations",
+      "gdelt_doc_api_base": "https://api.gdeltproject.org/api/v2/doc/doc"
+    }
+  },
+  "groups": {
+    "Rates & Policy": [
+      {
+        "series_id": "EFFR",
+        "label": "Fed Funds Effective Rate",
+        "latest_date": "2025-12-19",
+        "latest_value": 3.64,
+        "delta_approx_5obs": 0.0,
+        "freq_hint": "daily"
+      },
+      {
+        "series_id": "SOFR",
+        "label": "SOFR",
+        "latest_date": "2025-12-19",
+        "latest_value": 3.66,
+        "delta_approx_5obs": -0.009999999999999787,
+        "freq_hint": "daily"
+      },
+      {
+        "series_id": "DGS2",
+        "label": "2Y Treasury",
+        "latest_date": "2025-12-19",
+        "latest_value": 3.48,
+        "delta_approx_5obs": -0.040000000000000036,
+        "freq_hint": "daily"
+      },
+      {
+        "series_id": "DGS10",
+        "label": "10Y Treasury",
+        "latest_date": "2025-12-19",
+        "latest_value": 4.16,
+        "delta_approx_5obs": -0.03000000000000025,
+        "freq_hint": "daily"
+      },
+      {
+        "series_id": "DGS30",
+        "label": "30Y Treasury",
+        "latest_date": "2025-12-19",
+        "latest_value": 4.82,
+        "delta_approx_5obs": -0.02999999999999936,
+        "freq_hint": "daily"
+      },
+      {
+        "series_id": "T10Y2Y",
+        "label": "10Y-2Y Treasury Spread",
+        "latest_date": "2025-12-22",
+        "latest_value": 0.73,
+        "delta_approx_5obs": 0.05999999999999994,
+        "freq_hint": "daily"
+      }
+    ],
+    "Inflation (Actual)": [
+      {
+        "series_id": "CPIAUCSL",
+        "label": "CPI (All Items)",
+        "latest_date": "2025-11-01",
+        "latest_value": 325.031,
+        "delta_approx_5obs": 4.451000000000022,
+        "freq_hint": "monthly"
+      },
+      {
+        "series_id": "CPILFESL",
+        "label": "Core CPI",
+        "latest_date": "2025-11-01",
+        "latest_value": 331.068,
+        "delta_approx_5obs": 4.213999999999999,
+        "freq_hint": "monthly"
+      },
+      {
+        "series_id": "PCEPI",
+        "label": "PCE Price Index",
+        "latest_date": "2025-09-01",
+        "latest_value": 127.625,
+        "delta_approx_5obs": 1.4749999999999943,
+        "freq_hint": "monthly"
+      },
+      {
+        "series_id": "PCEPILFE",
+        "label": "Core PCE",
+        "latest_date": "2025-09-01",
+        "latest_value": 126.954,
+        "delta_approx_5obs": 1.4519999999999982,
+        "freq_hint": "monthly"
+      }
+    ],
+    "Inflation (Market Expectations)": [
+      {
+        "series_id": "T10YIE",
+        "label": "10Y Breakeven Inflation Rate",
+        "latest_date": "2025-12-22",
+        "latest_value": 2.23,
+        "delta_approx_5obs": -0.020000000000000018,
+        "freq_hint": "daily"
+      },
+      {
+        "series_id": "T5YIE",
+        "label": "5Y Breakeven Inflation Rate",
+        "latest_date": "2025-12-22",
+        "latest_value": 2.25,
+        "delta_approx_5obs": -0.040000000000000036,
+        "freq_hint": "daily"
+      },
+      {
+        "series_id": "T5YIFR",
+        "label": "5Y, 5Y Forward Inflation Expectation Rate",
+        "latest_date": "2025-12-22",
+        "latest_value": 2.21,
+        "delta_approx_5obs": 0.0,
+        "freq_hint": "daily"
+      }
+    ],
+    "Growth & Labor": [
+      {
+        "series_id": "GDPC1",
+        "label": "Real GDP",
+        "latest_date": "2025-04-01",
+        "latest_value": 23770.976,
+        "delta_approx_5obs": 688.857,
+        "freq_hint": "quarterly"
+      },
+      {
+        "series_id": "INDPRO",
+        "label": "Industrial Production Index",
+        "latest_date": "2025-09-01",
+        "latest_value": 101.4279,
+        "delta_approx_5obs": 0.29999999999999716,
+        "freq_hint": "monthly"
+      },
+      {
+        "series_id": "RSAFS",
+        "label": "Retail Sales",
+        "latest_date": "2025-10-01",
+        "latest_value": 732633.0,
+        "delta_approx_5obs": 16532.0,
+        "freq_hint": "monthly"
+      },
+      {
+        "series_id": "UNRATE",
+        "label": "Unemployment Rate",
+        "latest_date": "2025-11-01",
+        "latest_value": 4.6,
+        "delta_approx_5obs": 0.39999999999999947,
+        "freq_hint": "monthly"
+      },
+      {
+        "series_id": "ICSA",
+        "label": "Initial Claims",
+        "latest_date": "2025-12-13",
+        "latest_value": 224000.0,
+        "delta_approx_5obs": -4000.0,
+        "freq_hint": "weekly"
+      }
+    ],
+    "Financial Conditions & Credit": [
+      {
+        "series_id": "NFCI",
+        "label": "Chicago Fed NFCI",
+        "latest_date": "2025-12-12",
+        "latest_value": -0.55282,
+        "delta_approx_5obs": -0.03440999999999994,
+        "freq_hint": "weekly"
+      },
+      {
+        "series_id": "BAMLH0A0HYM2",
+        "label": "US High Yield OAS",
+        "latest_date": "2025-12-19",
+        "latest_value": 2.9,
+        "delta_approx_5obs": -0.010000000000000231,
+        "freq_hint": "daily"
+      },
+      {
+        "series_id": "BAA10YM",
+        "label": "Moody's Baa - 10Y Treasury Spread",
+        "latest_date": "2025-11-01",
+        "latest_value": 1.77,
+        "delta_approx_5obs": 0.0,
+        "freq_hint": "daily"
+      },
+      {
+        "series_id": "STLFSI4",
+        "label": "St. Louis Fed Financial Stress Index",
+        "latest_date": "2025-12-12",
+        "latest_value": -0.3606,
+        "delta_approx_5obs": -0.04749999999999999,
+        "freq_hint": "weekly"
+      }
+    ],
+    "Risk Appetite & Markets": [
+      {
+        "series_id": "VIXCLS",
+        "label": "VIX",
+        "latest_date": "2025-12-19",
+        "latest_value": 14.91,
+        "delta_approx_5obs": -0.8300000000000001,
+        "freq_hint": "daily"
+      },
+      {
+        "series_id": "SP500",
+        "label": "S&P 500",
+        "latest_date": "2025-12-22",
+        "latest_value": 6878.49,
+        "delta_approx_5obs": 61.97999999999956,
+        "freq_hint": "daily"
+      }
+    ],
+    "FX & Commodities": [
+      {
+        "series_id": "DTWEXBGS",
+        "label": "Trade Weighted U.S. Dollar Index: Broad",
+        "latest_date": "2025-12-19",
+        "latest_value": 120.5571,
+        "delta_approx_5obs": 0.018799999999998818,
+        "freq_hint": "daily"
+      },
+      {
+        "series_id": "DCOILWTICO",
+        "label": "WTI Crude Oil Spot Price",
+        "latest_date": "2025-12-15",
+        "latest_value": 56.97,
+        "delta_approx_5obs": -2.0700000000000003,
+        "freq_hint": "daily"
+      }
+    ],
+    "Housing": [
+      {
+        "series_id": "MORTGAGE30US",
+        "label": "30-Year Fixed Mortgage Rate",
+        "latest_date": "2025-12-18",
+        "latest_value": 6.21,
+        "delta_approx_5obs": -0.03000000000000025,
+        "freq_hint": "weekly"
+      },
+      {
+        "series_id": "HOUST",
+        "label": "Housing Starts",
+        "latest_date": "2025-08-01",
+        "latest_value": 1307.0,
+        "delta_approx_5obs": -48.0,
+        "freq_hint": "monthly"
+      }
+    ]
+  },
+  "missing_fields": [],
+  "news_pulse": [
+    {
+      "name": "AI_capex",
+      "lookback_days": 3,
+      "error": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "name": "Semiconductor_supply_chain",
+      "lookback_days": 3,
+      "total_articles": null
+    },
+    {
+      "name": "China_export_controls",
+      "lookback_days": 3,
+      "error": "Expecting value: line 1 column 1 (char 0)"
+    }
+  ]
+}
